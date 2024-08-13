@@ -285,7 +285,7 @@ background-color: #1D1D1D;
 }
 
 .card-details input::before {
-    content: url("C:/wamp64/www/ballamas-shop/src/icon/lock.png");
+    content: url("../../icon/lock.png");
     position: absolute;
     left: 10px;
     top: 50%;
