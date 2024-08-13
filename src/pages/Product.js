@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom"; 
 import "./styles/product.css";
-import ProductCard from 'C:/wamp64/www/ballamas-shop/src/components/productCard.js';
-import 'C:/wamp64/www/ballamas-shop/src/components/style/productGridCustom.css';
+import ProductCard from '../components/productCard.js';
+import '../components/style/productGridCustom.css';
 
 const Product = () => {
   const [product, setProduct] = useState(null);
