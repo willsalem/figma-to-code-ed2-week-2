@@ -1,0 +1,202 @@
+.shop-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shop-image {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+}
+
+.shop-image img {
+    width: 100%;
+    max-width: 579px;
+    border-radius: 32px;
+    height: auto;
+}
+
+.shop-info {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 20px;
+}
+
+.shop-info h1 {
+    font-family: 'Chillax', sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.shop-price {
+    font-family: 'Archivo', sans-serif;
+    font-size: 36px;
+    margin-top: 1px;
+    font-weight: bold;
+    color: #000;
+}
+
+.shop-color span {
+    font-weight: bold;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.color-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.color-dot.green {
+    background-color: green;
+}
+
+.color-dot.blue {
+    background-color: blue;
+}
+
+.color-dot.black {
+    background-color: black;
+}
+
+.color-dot.brown {
+    background-color: brown;
+}
+
+.shop-sizes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.shop-sizes p {
+    color: #000;
+    font-family: 'Archivo', sans-serif;
+    font-weight: medium;
+    font-size: 30px;
+    display: block;
+}
+
+.size-btnn,
+.size-btn {
+    padding: 10px 15px;
+    border: 2px solid #000;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Archivo', sans-serif;
+    border-radius: 100px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.size-btnn {
+    color: #ffffff;
+    background-color: #000;
+}
+
+.buy-now-btn,
+.add-to-cart-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Archivo', sans-serif;
+    width: 285px;
+    height: 68px;
+    border-radius: 100px;
+}
+
+.buy-now-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    margin-right: 10px;
+}
+
+.add-to-cart-btn {
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.shop-description {
+    margin-top: 20px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    color: #575757;
+}
+
+.custom-product-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.custom-product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.custom-product-grid .product-card {
+    flex: 1 1 200px;
+    max-width: 300px;
+}
+
+
+@media (max-width: 768px) {
+    .shop-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop-image,
+    .shop-info {
+        max-width: 100%;
+    }
+
+    .shop-info {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .shop-sizes {
+        justify-content: center;
+    }
+
+    .buy-now-btn,
+    .add-to-cart-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-info h1 {
+        font-size: 32px;
+    }
+
+    .shop-price {
+        font-size: 28px;
+    }
+
+    .shop-description {
+        font-size: 16px;
+    }
+
+    .shop-sizes p {
+        font-size: 24px;
+    }
+}

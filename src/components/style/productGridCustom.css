@@ -1,0 +1,49 @@
+.custom-product-list {
+    margin-top: 4rem;
+    padding: 0 2rem;
+}
+
+.custom-product-list h2 {
+    font-family: 'Chillax', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.custom-product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .custom-product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .custom-product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.custom-product-card {
+    text-align: center;
+}
+
+.custom-product-card img {
+    border-radius: 12px;
+}
+
+.custom-product-card h2 {
+    font-size: 20px;
+    font-family: 'Archivo', sans-serif;
+}
+
+.custom-product-card p {
+    font-size: 18px;
+    color: #333;
+    font-family: 'Archivo', sans-serif;
+}

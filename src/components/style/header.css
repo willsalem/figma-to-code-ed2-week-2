@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=chillax@700&display=swap');
+
+
+body {
+    font-family: 'Archivo', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+}
+
+.top-bar {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Archivo', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+}
+
+.logo {
+    font-family: 'Chillax', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Archivo', sans-serif;
+}
+
+.menu li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions .icon {
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+}
+
+.burger-menu.open {
+    transform: rotate(45deg);
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding: 20px;
+    border-top: 1px solid #eaeaea;
+}
+
+.mobile-menu li {
+    margin: 10px 0;
+}
+
+.separator {
+    width: calc(100% - 40px);
+    height: 1px;
+    background-color: #eaeaea;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .menu,
+    .actions .cart-text {
+        display: none;
+    }
+
+    .actions .cart-icon {
+        display: block;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .actions {
+        position: absolute;
+        right: 10px;
+    }
+
+    .actions .icon {
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 769px) {
+    .actions .cart-icon {
+        display: none;
+    }
+
+    .actions .cart-text {
+        display: block;
+                text-decoration: none;
+                    color: rgb(56, 56, 56);
+    }
+}
